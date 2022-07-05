@@ -1,4 +1,4 @@
-      name: android_build_hahaTVBOX
+      name: android_build_haha
 
 on:
   workflow_dispatch:
