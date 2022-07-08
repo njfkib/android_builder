@@ -1,4 +1,4 @@
-name: android_build_BearTV
+name: android_build_beartv
 
 on:
   workflow_dispatch:
