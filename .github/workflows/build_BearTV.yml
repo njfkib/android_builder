@@ -1,4 +1,4 @@
-name: android_build_BearTV
+name: android_build
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ jobs:
       - id: get-project
         name: Get project name
         run: echo "::set-output name=PROJECT::$(cat 
-project-to-build-BearTV)"
+project-to-build)"
       - name: Clone project
         run: git clone --depth=1 ${{ steps.get-project.outputs.PROJECT }} project
       - name: Build the app
