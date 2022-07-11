@@ -27,7 +27,7 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
-          name: my-build-apk
+          name: my-build-njfkib-apk
           path: ./**/*.apk
           
           
