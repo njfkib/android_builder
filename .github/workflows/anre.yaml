@@ -1,4 +1,4 @@
-name: android_build_anre
+name: android_build_anaer
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ jobs:
           java-version: 1.8
       - id: get-project
         name: Get project name
-        run: echo "::set-output name=PROJECT::$(cat project-to-build-anre)"
+        run: echo "::set-output name=PROJECT::$(cat project-to-build-anaer)"
       - name: Clone project
         run: git clone --depth=1 ${{ steps.get-project.outputs.PROJECT }} project
       - name: Build the app
@@ -27,5 +27,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
-          name: my-build-anre-apk
+          name: my-build-anaer-apk
           path: ./**/*anre.apk
