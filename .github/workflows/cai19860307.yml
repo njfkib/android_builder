@@ -27,5 +27,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
-          name: my-buildcai19860307-apk
+          name: my-build-cai19860307-apk
           path: ./**/*.apk
