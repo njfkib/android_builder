@@ -27,5 +27,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
-          name: my-build-chengxue2020-apk
+          name: my-build-Damonwei1120-apk
           path: ./**/*.apk
