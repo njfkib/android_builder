@@ -27,5 +27,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
-          name: my-build-a320-apk
+          name: my-build-llazyl-apk
           path: ./**/*.apk
