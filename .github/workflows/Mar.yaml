@@ -1,6 +1,11 @@
 name: Mar_android
 
 on:
+  schedule:
+    - cron: 15,45 0-18 * * *
+  push:
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
