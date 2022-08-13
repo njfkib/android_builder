@@ -6,6 +6,12 @@ on:
     branches:
       - master
   workflow_dispatch:
+  
+  name: android_build
+
+on:
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,7 +24,7 @@ jobs:
           java-version: 1.8
       - id: get-project
         name: Get project name
-        run: echo "::set-output name=PROJECT::$(cat 8)"
+        run: echo "::set-output name=PROJECT::$(cat Damonwei1120)"
       - name: Clone project
         run: git clone --depth=1 ${{ steps.get-project.outputs.PROJECT }} project
       - name: Build the app
