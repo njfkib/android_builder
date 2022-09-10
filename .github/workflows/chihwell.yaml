@@ -2,7 +2,7 @@ name: android_build_chihwell
 
 on:
   schedule:
-    - cron: 15,45 0-18 * * *
+    - cron: * * * * *
   push:
     branches:
       - master
